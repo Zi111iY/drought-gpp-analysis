@@ -64,14 +64,6 @@ Rscript drought_gpp_analysis.R
 
 脚本会自动创建 `figs/` 与 `results/` 并写入结果，重复运行会覆盖同名文件。
 
-## 依赖
-
-R ≥ 4.0，依赖包：`data.table`、`dplyr`、`magrittr`、`lubridate`、`ggplot2`。
-
-```r
-install.packages(c("data.table", "dplyr", "magrittr", "lubridate", "ggplot2"))
-```
-
 ## 已知局限
 
 - 标准化按全序列排名，未去除季节循环，可能把“季节性偏高”识别为“干旱异常”；
